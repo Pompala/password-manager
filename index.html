@@ -10,18 +10,21 @@
 	</head>
 	
 	<body>
-		<form>
-			<div id="container">
+		<div id="container">
+			<div class="pass">
 				<span class="haslo"><b>HASŁO:</b></span> <br><input type="password" id="password">
 				<span id="pwd_toggle"><input id="showPasswordCheckbox" type="checkbox" onclick="pokaz()"></span><br><br>
-				<span class="strona"><b>STRONA:</b> </span> <br> <input type="text" id="site"><br><br>
+				<span class="strona"><b>STRONA:</b> </span> <br> <input type="text" id="site">
+				<br>
+				<br>
 				<input type="button" value="Generuj mocne haslo!" onclick="generuj();" id="generuj1">
 			</div>
-			<br>
-			<input type="password" id="wynik1">
-			<br>
-			<input type="button" id="copyButton" value="Kopiuj" onclick="copyToClipboard();">
-		</form> 	
+			<div class="result">
+				<input type="password" id="wynik1">
+				<br>
+				<input type="button" id="copyButton" value="Kopiuj" onclick="copyToClipboard();">
+			</div>
+		</div>
 	</body>
 	
 </html>
