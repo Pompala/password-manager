@@ -12,19 +12,18 @@
 	<body>
 		<div id="container">
 			<div class="pass">
-				<span class="haslo"><b>HASŁO:</b></span> <br><input type="password" id="password">
-				<span id="pwd_toggle"><input id="showPasswordCheckbox" type="checkbox" onclick="pokaz()"></span><br><br>
-				<span class="strona"><b>STRONA:</b> </span> <br> <input type="text" id="site">
+				<span class="haslo"><b>PASSWORD :</b></span><br><input type="password" id="password">
+				<span id="pwd_toggle"><input id="showPasswordCheckbox" type="checkbox" onclick="show_pwd1()"></span><br><br>
+				<span class="strona"><b>SITE :</b></span><br><input type="text" id="site">
 				<br>
 				<br>
-				<input type="button" value="Generuj mocne haslo!" onclick="generuj();" id="generuj1">
+				<input type="button" value="Generate Strong Password!" onclick="generuj();" id="generuj1">
 			</div>
-			<div class="result">
+			<div id="result">
 				<input type="password" id="wynik1">
-				<br>
+				<span id="pwd-toggle1"><input id="showPasswordCheckbox" type="checkbox" onclick="show_pwd2()"></span><br><br>
 				<input type="button" id="copyButton" value="Kopiuj" onclick="copyToClipboard();">
 			</div>
 		</div>
 	</body>
-	
 </html>

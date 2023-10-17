@@ -195,22 +195,36 @@
 				else {
 					document.getElementById('wynik1').value = finalPass;
 					document.getElementById('copyButton').style.display = 'initial';
+					document.getElementById('result').style.display = 'initial';
 				}
 
 			}
+
+
 			
-			function pokaz() 
+			function show_pwd1() 
 			{
-				var y = document.getElementById("wynik1");
 				var x = document.getElementById("password");
 				if(x.type == "password") 
 				{
-					y.type = "text";
 					x.type = "text";
 				} 
 				else 
 				{
-					y.type = "password";
 					x.type = "password";
+				}
+			}
+
+
+			function show_pwd2() 
+			{
+				var y = document.getElementById("wynik1");
+				if(y.type == "password") 
+				{
+					y.type = "text";
+				} 
+				else 
+				{
+					y.type = "password";
 				}
 			}
